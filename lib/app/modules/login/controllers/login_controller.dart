@@ -1,9 +1,17 @@
+import 'package:flutter/material.dart';
 import 'package:get/get.dart';
+import 'package:mediction/app/routes/app_pages.dart';
 
 class LoginController extends GetxController {
-  //TODO: Implement LoginController
+  final isLoading = false.obs;
 
-  final count = 0.obs;
+  TextEditingController emailCtrl = TextEditingController();
+  TextEditingController passwordCtrl = TextEditingController();
+
+  final obscurePassword = true.obs;
+  final chechkbox = false.obs;
+  final isValidForm = false.obs;
+
   @override
   void onInit() {
     super.onInit();
@@ -19,5 +27,16 @@ class LoginController extends GetxController {
     super.onClose();
   }
 
-  void increment() => count.value++;
+  void toggleObscurePassword() {
+    obscurePassword.value = !obscurePassword.value;
+  }
+
+  checkIsValidForm() {
+    isValidForm.value =
+        emailCtrl.text.isNotEmpty && passwordCtrl.text.isNotEmpty;
+  }
+
+  void login() {
+    Get.offAllNamed(Routes.MAIN);
+  }
 }

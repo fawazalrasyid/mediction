@@ -2,22 +2,46 @@ name: mediction
 version: 1.0.0+1
 publish_to: none
 description: A new Flutter project.
-environment: 
-  sdk: '>=3.2.3 <4.0.0'
+environment:
+  sdk: ">=3.2.3 <4.0.0"
 
-dependencies: 
+dependencies:
   cupertino_icons: ^1.0.2
   get: 4.6.6
-  flutter: 
+  flutter:
     sdk: flutter
-  three_dart: ^0.0.16
-  intl: ^0.19.0
+  flutter_svg: ^2.0.2
+  iconly: ^1.0.1
+  intl: ^0.17.0
+  step_progress_indicator: ^1.0.2
+  iconsax: ^0.0.8
+  image_picker: ^1.0.7
+  dotted_border: ^2.1.0
+  camera: ^0.10.5+9
+  date_time_picker: ^2.1.0
 
-dev_dependencies: 
+dev_dependencies:
   flutter_lints: ^2.0.0
-  flutter_test: 
+  flutter_test:
     sdk: flutter
 
-flutter: 
+flutter:
   uses-material-design: true
-
+  assets:
+    - assets/images/
+  fonts:
+    - family: DM Sans
+      fonts:
+        - asset: assets/fonts/DMSans-Regular.ttf
+        - asset: assets/fonts/DMSans-Bold.ttf
+        - asset: assets/fonts/DMSans-SemiBold.ttf
+        - asset: assets/fonts/DMSans-Medium.ttf
+        - asset: assets/fonts/DMSans-Light.ttf
+        - asset: assets/fonts/DMSans-Thin.ttf
+    - family: Plus Jakarta Sans
+      fonts:
+        - asset: assets/fonts/PlusJakartaSans-Regular.ttf
+        - asset: assets/fonts/PlusJakartaSans-Bold.ttf
+        - asset: assets/fonts/PlusJakartaSans-SemiBold.ttf
+        - asset: assets/fonts/PlusJakartaSans-Medium.ttf
+        - asset: assets/fonts/PlusJakartaSans-Light.ttf

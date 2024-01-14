@@ -1,7 +1,8 @@
 import 'package:flutter/material.dart';
 
 abstract class AppColors {
-  static const Color pageBackground = Color(0xFFF7FCFE);
+  static const Color pageBackground = Color(0xFFFFFFFF);
+  static const Color gradientPageBackground = Color(0xFFFFFFFF);
   static const Color statusBarColor = Color(0xFF38686A);
   static const Color appBarColor = Color(0xFF38686A);
   static const Color appBarIconColor = Color(0xFFFFFFFF);
@@ -42,7 +43,7 @@ abstract class AppColors {
 
   static const Color textFieldBorder = Color(0xFFBFBFC0);
   static const Color focusedTextFieldBorder = colorPrimary;
-  static const Color textFieldHint = Color(0xffC6C6C6);
+  static const Color textFieldHint = Color(0xFF717375);
 
   static const Color iconDefault = Color(0xFF82838A);
   static const Color icon = Color(0xFFD8DCDF);

@@ -5,8 +5,8 @@
 import FlutterMacOS
 import Foundation
 
-import flutter_gl_macos
+import file_selector_macos
 
 func RegisterGeneratedPlugins(registry: FlutterPluginRegistry) {
-  FlutterGlMacosPlugin.register(with: registry.registrar(forPlugin: "FlutterGlMacosPlugin"))
+  FileSelectorPlugin.register(with: registry.registrar(forPlugin: "FileSelectorPlugin"))
 }

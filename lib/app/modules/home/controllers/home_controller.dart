@@ -1,9 +1,25 @@
 import 'package:get/get.dart';
 
 class HomeController extends GetxController {
-  //TODO: Implement HomeController
+  final feelings = ['😄 Baik', '🤢 Tidak Baik', '🤒 Demam', '🤧 Flu'];
 
-  final count = 0.obs;
+  final menuNames = [
+    'Diary Kesehatan',
+    'Cari Faskes',
+  ];
+  final menuDescrptions = [
+    'Catat dan track kondisi kesehatan mandiri!',
+    'Cari faskes terdekat sesuai kebutuhan!'
+  ];
+  final menuImages = [
+    "assets/images/medical_report.png",
+    "assets/images/scan_qr.png",
+  ];
+  final menuActions = [
+    'Tulis Diary',
+    'Cari Sekarang',
+  ];
+
   @override
   void onInit() {
     super.onInit();
@@ -18,6 +34,4 @@ class HomeController extends GetxController {
   void onClose() {
     super.onClose();
   }
-
-  void increment() => count.value++;
 }

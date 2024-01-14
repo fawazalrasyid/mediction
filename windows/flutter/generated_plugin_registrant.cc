@@ -6,9 +6,9 @@
 
 #include "generated_plugin_registrant.h"
 
-#include <flutter_gl_windows/flutter_gl_windows_plugin.h>
+#include <file_selector_windows/file_selector_windows.h>
 
 void RegisterPlugins(flutter::PluginRegistry* registry) {
-  FlutterGlWindowsPluginRegisterWithRegistrar(
-      registry->GetRegistrarForPlugin("FlutterGlWindowsPlugin"));
+  FileSelectorWindowsRegisterWithRegistrar(
+      registry->GetRegistrarForPlugin("FileSelectorWindows"));
 }
