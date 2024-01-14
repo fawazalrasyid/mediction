@@ -3,7 +3,6 @@ import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 import 'package:iconly/iconly.dart';
 import 'package:iconsax/iconsax.dart';
-import 'package:mediction/app/modules/coming_soon/views/coming_soon_view.dart';
 import 'package:mediction/app/modules/medical_record/views/medical_record_view.dart';
 import 'package:mediction/app/modules/profile/views/profile_view.dart';
 import 'package:mediction/app/modules/schedule/views/schedule_view.dart';
